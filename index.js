@@ -5,7 +5,7 @@ var send = require('send'),
 
     SERVER_PORT = 8081,
     // e.g. http://gs2.ww.prod.dl.playstation.net/gs2/ppkgo/prod/CUSA05528_00/23/f_947a347c1221b18179a82a9a95d360695eba4a14e837af8949574ac1949174e8/f/EP1965-CUSA05528_00-2016NEVERWINTER1-A0420-V0100_0.pkg?downloadId=00000040&du=000000000000004000e21d2a2866c395&country=in&downloadType=ob&q=a8318f20bb9240e28bc92c6539296c53e7b1ba45be89a14559d619693330d2b3&threadId=1&serverIpAddr=192.168.1.3&r=00000004
-    PS_REGEX = /^http:\/\/gs2\.ww\.prod\.dl\.playstation\.net.*\/([^\?]+)\?downloadId.*/,
+    PS_REGEX = /^http:\/\/gs2\.ww\.prod\.dl\.playstation\.net.*\/([^\?]+)/,
     FILE_INDEX = 1; // index of the file name in the regex-match array
 
 http.createServer(onRequest).listen(SERVER_PORT);
